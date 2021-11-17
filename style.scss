@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$primary:#007bff;
+$secondary:#6c757d;
+
+body {
+    background-color: #F6F7F9;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    header {
+        width: 100%;
+        max-width: 100vw;
+        height: 4rem;
+        background-color: #0B66C3;
+        color: #fff;
+        margin-bottom: 3rem;
+        display: grid;
+        place-items: center;
+    }
+
+    .container-fluid {
+        padding: 0 6rem;
+
+        // main company panel
+        .comp-panel {
+            .comp-header {
+                background-color: #fff;
+                border-radius: 8px;
+
+                .cover-img {
+                    position: relative;
+
+                    img {
+                        border-radius: 8px;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+
+                .comp-info {
+                    padding: 5rem 1.5rem 1.5rem;
+                    position: relative;
+
+                    .comp-profile-img {
+                        position: absolute;
+                        top: -3rem;
+                        border-radius: 8px;
+                    }
+
+                    .comp-name {
+                        color: #35373a;
+                        font-size: 1.5rem;
+                    }
+
+                    .comp-tagline {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        margin: 0.6rem 0;
+
+                        &.comp-listing {
+                            color: $secondary;
+                        }
+
+                        &.comp-allEmp-Link {
+                            font-weight: 500;
+                            color: $primary;
+                        }
+                    }
+
+                    .comp-action-btns {
+                        button {
+                            font-size: .85rem;
+                            margin-right: 0.5rem;
+
+                            &.btn-more {
+                                background-color: #E9EFF5;
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul.comp-tabs {
+                margin: 1.5rem 0;
+                padding: 1rem 0.75rem;
+                background-color: #fff;
+                border-bottom: none;
+                border-radius: 8px;
+
+                li.nav-item {
+                    border-right: 1px solid #ddd;
+
+                    &:nth-last-child(1) {
+                        border-right: none;
+                    }
+
+                    a.nav-link {
+                        position: relative;
+                        font-size: 0.9rem;
+                        padding: 0 1rem;
+                        color: $secondary;
+                        transition: 0.5s ease all;
+
+                        &:hover {
+                            border: none !important;
+                        }
+
+                        &.active {
+                            border: none;
+                            color: #7EBA2D;
+
+                            &::after {
+                                position: absolute;
+                                bottom: -1.1rem;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                content: "";
+                                width: 80%;
+                                height: 2px;
+                                background-color: #7EBA2D;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .comp-tabs-content {
+                position: relative;
+                background-color: #fff;
+                border-radius: 8px;
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+
+                .tab-pane {
+                    p {
+                        font-size: 0.9rem;
+                    }
+
+                    .info-box-outer {
+                        display: flex;
+                        justify-content: space-between;
+                        // flex-basis: 80% 80%;
+                        height: 100%;
+
+
+                        .info-box {
+                            padding: 1rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            min-height: 6rem;
+                            height: 100%;
+                            border: 1px solid #dee2e6;
+                            width: 100%;
+                            border-radius: 8px;
+
+                            &:nth-child(1) {
+                                margin-right: 1rem;
+                            }
+
+                            &:nth-child(2) {
+                                margin-left: 1rem;
+                            }
+
+                            p {
+                                margin-bottom: 0;
+                            }
+
+                            .via {
+                                color: $secondary;
+                            }
+
+                            .ib-link {
+                                color: $primary;
+                                cursor: pointer;
+                                font-weight: 500;
+
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // sidepanel people also viwed
+        aside {
+            margin-bottom: 2rem;
+
+            .other-comps {
+                position: sticky;
+                top: 2rem;
+                background-color: #fff;
+                border-radius: 8px;
+                padding: 1.5rem;
+
+                .other-comp {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 1rem 0;
+
+                    .other-comp-info {
+                        display: flex;
+
+                        .other-comp-logo {
+                            border-radius: 50%;
+                            height: 50px;
+                            width: 50px;
+                            margin-right: 1rem;
+                            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+
+                        }
+
+                        p {
+                            margin-bottom: 0px;
+                            font-weight: 500;
+                        }
+
+                        small {
+                            position: relative;
+                            top: -.3rem;
+                        }
+                    }
+
+                    .other-comp-view {
+                        color: $primary;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+@media only screen and (max-width: 767px) {
+    main {
+        .container-fluid {
+            padding: 0 1rem;
+        }
+    }
+}

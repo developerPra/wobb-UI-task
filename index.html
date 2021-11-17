@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <i class="fab fa-linkedin fa-3x mr-3"></i>
+                    <div>Linkedin - Figma Profile Deign Task</div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- main panel starts - company -->
+                <div class="comp-panel col-lg-8">
+                    <div class="comp-header">
+                        <div class="cover-img">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="https://picsum.photos/id/230/1400/400">
+                                <img src="https://picsum.photos/id/290/1400/400" alt="company's profile cover">
+                            </picture>
+                        </div>
+                        <div class="comp-info">
+                            <img class="comp-profile-img" src="https://picsum.photos/id/208/100/100"
+                                alt="company's profile">
+                            <h1 class="comp-name">Figma</h1>
+                            <h2 class="comp-tagline">A design platform for teams who build products togather</h2>
+                            <p class="comp-listing text-secondary">Design . San Francisco, CA . 101282 followers</p>
+                            <p class="comp-allEmp-Link text-primary">See all 358 empyloees on Linkedin</p>
+                            <div class="comp-action-btns">
+                                <button class="btn btn-primary"><i class="far fa-eye mr-2"></i>Follow</button>
+                                <button class="btn btn-outline-primary"><i
+                                        class="fas fa-external-link-alt mr-2"></i>Visit
+                                    Website
+                                </button>
+                                <button type="button" class="btn btn-more shadow-sm"><i
+                                        class="fas fa-ellipsis-h"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs comp-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="Overview-tab" data-toggle="tab" href="#Overview" role="tab"
+                                aria-controls="Overview" aria-selected="true">Overview</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab"
+                                aria-controls="about" aria-selected="false">About </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="products-tab" data-toggle="tab" href="#products" role="tab"
+                                aria-controls="products" aria-selected="false">Products</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="posts-tab" data-toggle="tab" href="#posts" role="tab"
+                                aria-controls="posts" aria-selected="false">Posts</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="jobs-tab" data-toggle="tab" href="#jobs" role="tab"
+                                aria-controls="jobs" aria-selected="false">Jobs</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="peoples-tab" data-toggle="tab" href="#peoples" role="tab"
+                                aria-controls="peoples" aria-selected="false">Peoples</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab"
+                                aria-controls="videos" aria-selected="false">Videos</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content comp-tabs-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="Overview" role="tabpanel"
+                            aria-labelledby="Overview-tab">
+                            <h6>About</h6>
+                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                                consequuntur ex
+                                repudiandae neque ea, fuga beatae, quis soluta minus, magnam sed cupiditate. Laborum
+                            </p>
+                            <div class="info-box-outer">
+                                <div class="info-box">
+                                    <p class="ib-heading">website url</p>
+                                    <a class="ib-link">Figma.com</a>
+                                </div>
+                                <div class="info-box">
+                                    <p class="via">Funding via Chrunchbase</p>
+                                    <p class="ib-heading">Series D</p>
+                                    <a class="ib-link">US$ 50M</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">About Tab
+                        </div>
+                        <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">products
+                            tab
+                        </div>
+                        <div class="tab-pane fade" id="posts" role="tabpanel" aria-labelledby="posts-tab">posts Tab
+                        </div>
+                        <div class="tab-pane fade" id="jobs" role="tabpanel" aria-labelledby="jobs-tab">jobs tab</div>
+                        <div class="tab-pane fade" id="peoples" role="tabpanel" aria-labelledby="peoples-tab">peoples
+                            tab
+                        </div>
+                        <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">videos tab
+                        </div>
+                    </div>
+                </div>
+                <!-- main panel ends - company -->
+
+
+
+                <!-- side panel starts here -->
+                <aside class="side-panel col-lg-4">
+                    <div class="other-comps">
+                        <p>Pages peoples also viewed</p>
+
+                        <!-- other comp 1 start -->
+                        <div class="other-comp">
+                            <div class="other-comp-info">
+                                <img class="other-comp-logo" src="https://picsum.photos/id/137/100/100"
+                                    alt="other compant logo">
+                                <div>
+                                    <p>InVision</p>
+                                    <small>Internet . 137k Followers</small>
+                                </div>
+                            </div>
+                            <div class="other-comp-view">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <!-- other comp 1 end -->
+
+                        <!-- other comp 2 start -->
+                        <div class="other-comp">
+                            <div class="other-comp-info">
+                                <img class="other-comp-logo" src="https://picsum.photos/id/127/100/100"
+                                    alt="other compant logo">
+                                <div>
+                                    <p>Lorem Company </p>
+                                    <small>Software . 1355k Followers</small>
+                                </div>
+                            </div>
+                            <div class="other-comp-view">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <!-- other comp 2 end -->
+
+                        <!-- other comp 3 start -->
+                        <div class="other-comp">
+                            <div class="other-comp-info">
+                                <img class="other-comp-logo" src="https://picsum.photos/id/197/100/100"
+                                    alt="other compant logo">
+                                <div>
+                                    <p>Jayks Chai Compa</p>
+                                    <small>Chai . 117k Followers</small>
+                                </div>
+                            </div>
+                            <div class="other-comp-view">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <!-- other comp 3 end -->
+
+                        <!-- other comp 4 start -->
+
+                        <div class="other-comp">
+                            <div class="other-comp-info">
+                                <img class="other-comp-logo" src="https://picsum.photos/id/157/100/100"
+                                    alt="other compant logo">
+                                <div>
+                                    <p>Pubmatic</p>
+                                    <small>Internet . 13k Followers</small>
+                                </div>
+                            </div>
+                            <div class="other-comp-view">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <!-- other comp 4 end -->
+
+                        <!-- other comp 5 start -->
+                        <div class="other-comp">
+                            <div class="other-comp-info">
+                                <img class="other-comp-logo" src="https://picsum.photos/id/151/100/100"
+                                    alt="other compant logo">
+                                <div>
+                                    <p>Vision Clatiy</p>
+                                    <small>Chairuy . 133k Followers</small>
+                                </div>
+                            </div>
+                            <div class="other-comp-view">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <!-- other comp 5 end -->
+
+                        <!-- other comp 6 start -->
+                        <div class="other-comp">
+                            <div class="other-comp-info">
+                                <img class="other-comp-logo" src="https://picsum.photos/id/152/100/100"
+                                    alt="other compant logo">
+                                <div>
+                                    <p>Skin Clear and Glow</p>
+                                    <small>Cosmetci . 137k Followers</small>
+                                </div>
+                            </div>
+                            <div class="other-comp-view">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <!-- other comp 6 end -->
+
+                        <!-- other comp 7 start -->
+                        <div class="other-comp">
+                            <div class="other-comp-info">
+                                <img class="other-comp-logo" src="https://picsum.photos/id/153/100/100"
+                                    alt="other compant logo">
+                                <div>
+                                    <p>HP Companany</p>
+                                    <small>Laptop . 130k Followers</small>
+                                </div>
+                            </div>
+                            <div class="other-comp-view">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <!-- other comp 7 end -->
+
+                        <!-- other comp 8 start -->
+                        <div class="other-comp">
+                            <div class="other-comp-info">
+                                <img class="other-comp-logo" src="https://picsum.photos/id/112/100/100"
+                                    alt="other compant logo">
+                                <div>
+                                    <p>LPG Gas Companany</p>
+                                    <small>LPG . 130k Followers</small>
+                                </div>
+                            </div>
+                            <div class="other-comp-view">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                        <!-- other comp 8 end -->
+
+
+
+
+                    </div>
+                </aside>
+                <!-- side panel ends here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="style.js"></script>
+</body>
+
+</html>
